@@ -84,7 +84,7 @@ useEffect(()=>{
 {/* related products */}
 <div  className='row'>
 { relatedProducts.length>0? relatedProducts.map((product)=>
-<div key={product._id} className='w-1/6  p-4 hover:bg-slate-100 rounded-md hover:shadow-md'>
+<div key={product._id} className='xl:w-1/6 sm:w-full md:w-1/3 lg:w-1/3  p-4 hover:bg-slate-100 rounded-md hover:shadow-md'>
 <div className="item  ">
 <Link to={`/productDetails/${product._id}/${product.category.name}`}>
 
@@ -120,7 +120,6 @@ useEffect(()=>{
 }
 
 </div>
-
 
 
     </>

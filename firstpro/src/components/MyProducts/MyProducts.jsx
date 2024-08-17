@@ -33,13 +33,13 @@ useEffect(()=>{
   {/* showing all products */}
 <div  className='row'>
 { Product.length>0? Product.map((product)=>
-<div key={product._id} className='w-1/6  p-4 hover:bg-slate-100 rounded-md hover:shadow-md'>
+<div key={product._id} className='xl:w-1/6 sm:w-full md:w-1/3 lg:w-1/3 p-4 hover:bg-slate-100 rounded-md hover:shadow-md'>
 <div className="item  ">
 <Link to={`productDetails/${product._id}/${product.category.name}`}>
 
   <img src={product.imageCover} alt={product.title} className='w-full ' />
-  <h3 className='text-orange-700 text-left '>{product.category.name}</h3>
-  <h3 className='font-semibold text-left text-slate-500'>{product.title.split(" ").slice(0,2).join(" ")}</h3>
+  <h3 className='text-orange-700 text-left  '>{product.category.name}</h3>
+  <h3 className='font-semibold text-left text-slate-500 text-sm '>{product.title.split(" ").slice(0,2).join(" ")}</h3>
   <div className='flex justify-between  text-left'>
   <h3 className='font-semibold'>{product.price} EGP</h3>
   <span className='pr-4'>
